@@ -1,0 +1,9 @@
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 if score @s jtd.manaBank matches ..4 at @s run playsound block.note_block.didgeridoo master @s ~ ~ ~ 1 .5
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 if score @s jtd.manaBank matches ..4 at @s run bossbar set jtd.manabank color red
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 if score @s jtd.manaBank matches ..4 at @s run title @s actionbar [{"bold":true,"color":"red","text":"♦ "},{"bold":false,"color":"red",score:{name:"@s",objective:"jtd.manaBank"}},{"bold":true,"color":"red","text":" ♦"}]
+
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 unless score @s jtd.manaBank matches ..4 at @s run particle cloud ~ ~.5 ~ 0 0 0 .1 10
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 unless score @s jtd.manaBank matches ..4 at @s run playsound minecraft:entity.breeze.charge master @a ~ ~ ~ 1 2
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 unless score @s jtd.manaBank matches ..4 at @s run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 2
+
+execute if score @s jtd.ability_air_windborneToggle matches 1 if score @s jtd.ability_air_windborneJump matches 1 unless score @s jtd.manaBank matches ..4 run scoreboard players remove @s jtd.manaBank 5

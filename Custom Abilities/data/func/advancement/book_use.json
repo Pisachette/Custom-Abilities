@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:enchanted_book",
+            "predicates": {
+              "minecraft:custom_data": "{blast:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "func:book_blast"
+    }
+  }

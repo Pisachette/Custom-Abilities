@@ -1,0 +1,23 @@
+attribute @s movement_speed modifier remove jtd.windbornesprint_1
+attribute @s movement_speed modifier remove jtd.windbornesprint_2
+attribute @s movement_speed modifier remove jtd.windbornesprint_3
+attribute @s movement_speed modifier remove jtd.windbornesprint_4
+attribute @s movement_speed modifier remove jtd.windbornesprint_5
+attribute @s movement_speed modifier remove jtd.windbornesprint_6
+attribute @s movement_speed modifier remove jtd.windbornesprint_7
+attribute @s movement_speed modifier remove jtd.windbornesprint_8
+attribute @s movement_speed modifier remove jtd.windbornesprint_9
+attribute @s movement_speed modifier remove jtd.windbornesprint_10
+attribute @s movement_speed modifier remove jtd.windbornesprint_11
+attribute @s movement_speed modifier remove jtd.windbornesprint_12
+attribute @s movement_speed modifier remove jtd.windbornesprint_13
+attribute @s movement_speed modifier remove jtd.windbornesprint_14
+attribute @s movement_speed modifier remove jtd.windbornesprint_15
+attribute @s movement_speed modifier remove jtd.windbornesprint_16
+attribute @s movement_speed modifier remove jtd.windbornesprint_17
+attribute @s movement_speed modifier remove jtd.windbornesprint_18
+attribute @s movement_speed modifier remove jtd.windbornesprint_19
+attribute @s movement_speed modifier remove jtd.windbornesprint_20
+attribute @s step_height modifier remove jtd.windbornestepheight
+execute unless score @s jtd.health matches 0 at @s run playsound entity.breeze.death master @a ~ ~ ~ 1 .5
+scoreboard players set @s jtd.ability_air_windborneReset 1

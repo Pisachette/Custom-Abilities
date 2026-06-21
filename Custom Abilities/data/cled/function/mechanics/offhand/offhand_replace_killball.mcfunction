@@ -1,0 +1,4 @@
+# take the item from the players mainhand, and swap it with the the killball, so the offhand item isnt overwritten
+    item replace entity @s weapon.offhand from entity @s weapon.mainhand
+# put the killball back in the player's mainhand
+    item replace entity @s weapon.mainhand with poisonous_potato[consumable={consume_seconds:999999,animation:"trident"},custom_data={cled_killball:true},food={nutrition:0,saturation:0,can_always_eat:true},item_model="minecraft:magma_cream",item_name={"bold":true,"color":"red","italic":false,"text":"Killball"},lore=[[{"color":"gray","italic":false,"text":"Interact "},{"color":"dark_gray","text":"to purify"}],[{"color":"gray","italic":false,"text":"Swap Hands "},{"color":"dark_gray","text":"to teleport to nearest minion"}],[{"color":"gray","italic":false,"text":"Stand "},{"color":"dark_gray","italic":false,"text":"for "},{"bold":true,"color":"green","text":"Cledball"}]]]

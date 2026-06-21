@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:stone_sword",
+            "predicates": {
+              "minecraft:custom_data": "{jtdEnder:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "jtd:item_rclick/jtd_rclick_ender"
+    }
+  }

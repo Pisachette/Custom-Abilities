@@ -1,0 +1,2 @@
+execute if items entity @s weapon.mainhand minecraft:stone_sword[minecraft:custom_data~{jtdSoul:true}] run scoreboard players set @s jtd.soul_rClick 1
+advancement revoke @s only jtd:jtd_advancement_soul

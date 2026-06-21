@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:bone",
+            "predicates": {
+              "minecraft:custom_data": "{bone_barrage:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "func:barrage_use"
+    }
+  }

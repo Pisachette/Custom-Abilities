@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:wooden_sword",
+            "predicates": {
+              "minecraft:custom_data": "{ft:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "func:ft_use"
+    }
+  }
