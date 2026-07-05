@@ -12,7 +12,7 @@
     kill @e[type=wolf,tag=ed7.kira]
 
 # stop kira death sound
-    stopsound @s * minecraft:entity.wolf_angry.death
+    stopsound @a * minecraft:entity.wolf_angry.death
 
 # reset kira active check to respawn kira
 execute if score @s ed7.kira_active matches 1 run scoreboard players reset @s ed7.kira_active

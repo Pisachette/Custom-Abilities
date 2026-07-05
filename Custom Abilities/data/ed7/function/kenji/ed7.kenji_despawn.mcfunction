@@ -3,7 +3,7 @@
 
 # despawn fx
     # sounds
-        playsound minecraft:block.vault.deactivate master @a ~ ~ ~ 1 .5
+        execute at @n[type=wolf,tag=ed7.kenji] run playsound minecraft:block.vault.deactivate master @a ~ ~ ~ 1 .5
         execute at @n[type=wolf,tag=ed7.kenji] run playsound minecraft:block.fire.extinguish master @a ~ ~ ~ 1 .5
     # make kenji invisible before dying
         effect give @n[tag=ed7.kenji] invisibility 1 255 true
@@ -13,7 +13,7 @@
 # remove kenji
     kill @e[type=wolf,tag=ed7.kenji,team=eDRAG0N7]
 # stop kenji death sound
-    stopsound @s * minecraft:entity.wolf_grumpy.death
+    stopsound @a * minecraft:entity.wolf_grumpy.death
 
 # remove player attributes
     attribute @s block_break_speed modifier remove ed7.kenji_break_speed

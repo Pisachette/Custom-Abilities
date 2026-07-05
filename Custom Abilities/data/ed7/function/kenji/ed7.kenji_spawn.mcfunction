@@ -6,7 +6,7 @@
 
 # spawn sounds
     execute at @n[type=wolf,tag=ed7.kenji] run playsound entity.item.pickup master @a ~ ~ ~ 1 .5
-    playsound minecraft:block.vault.activate master @a ~ ~ ~ 1 .5
+    execute at @n[type=wolf,tag=ed7.kenji] run playsound minecraft:block.vault.activate master @a ~ ~ ~ 1 .5
 
 # apply player attributes
     attribute @s block_break_speed modifier add ed7.kenji_break_speed .5 add_multiplied_base

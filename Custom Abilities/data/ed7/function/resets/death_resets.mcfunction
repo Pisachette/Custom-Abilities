@@ -10,6 +10,8 @@
             scoreboard players reset @s ed7.kaze_sprint_meter
         # reset sprint score
             scoreboard players reset @s ed7.player_sprint
+        # reset actionbar display
+            title @s actionbar ""
 
     # KIRA
         # remove kira and FX on death

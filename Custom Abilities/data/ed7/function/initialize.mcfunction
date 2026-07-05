@@ -15,7 +15,6 @@
         scoreboard objectives add ed7.player_attack_entity minecraft.custom:minecraft.damage_dealt
 
     # playerstate flags to prevent looping
-        scoreboard objectives add ed7.hunger_check dummy
         scoreboard objectives add ed7.death_check dummy
 
     # stores the sprint duration of a player
@@ -26,6 +25,8 @@
         scoreboard objectives add ed7.kenji_charge dummy
     # this score will be 1 when kenji is active, 0 when inactive
         scoreboard objectives add ed7.kenji_toggle dummy
+    # if the player is starved, this score will be 1, otherwise 0        
+        scoreboard objectives add ed7.kenji_hunger_check dummy
 
     # this score will be 1 when kaze is active, 0 when inactive
         scoreboard objectives add ed7.kenzo_active dummy

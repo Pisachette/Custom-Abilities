@@ -30,13 +30,13 @@
         # active
             execute if score @s ed7.kaze_sprint_meter matches 60.. run playsound minecraft:block.amethyst_block.chime master @a ~ ~ ~ 1 2
     # actionbar sounds
-        execute if score @s ed7.kaze_sprint_meter matches 6 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 .5
-        execute if score @s ed7.kaze_sprint_meter matches 12 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 .6
-        execute if score @s ed7.kaze_sprint_meter matches 18 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 .7
-        execute if score @s ed7.kaze_sprint_meter matches 24 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 .8
-        execute if score @s ed7.kaze_sprint_meter matches 30 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 .9
-        execute if score @s ed7.kaze_sprint_meter matches 36 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 1
-        execute if score @s ed7.kaze_sprint_meter matches 42 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 1.1
-        execute if score @s ed7.kaze_sprint_meter matches 48 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 1.2
-        execute if score @s ed7.kaze_sprint_meter matches 54 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 1.3
-        execute if score @s ed7.kaze_sprint_meter matches 60 run playsound entity.bat.takeoff master @a ~ ~ ~ .3 1.4
+        execute if score @s ed7.kaze_sprint_meter matches 6 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 .5
+        execute if score @s ed7.kaze_sprint_meter matches 12 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 .6
+        execute if score @s ed7.kaze_sprint_meter matches 18 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 .7
+        execute if score @s ed7.kaze_sprint_meter matches 24 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 .8
+        execute if score @s ed7.kaze_sprint_meter matches 30 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 .9
+        execute if score @s ed7.kaze_sprint_meter matches 36 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 1
+        execute if score @s ed7.kaze_sprint_meter matches 42 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 1.1
+        execute if score @s ed7.kaze_sprint_meter matches 48 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 1.2
+        execute if score @s ed7.kaze_sprint_meter matches 54 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 1.3
+        execute if score @s ed7.kaze_sprint_meter matches 60 unless score @s ed7.kaze_check matches 1 run playsound entity.bat.takeoff master @a ~ ~ ~ .2 1.4
