@@ -3,6 +3,8 @@
         "func:tick",
         "jtd:main",
         "dino:main",
-        "cled:main"
+        "cled:main",
+        "kano:main",
+        "ed7:main"
     ]
 }
