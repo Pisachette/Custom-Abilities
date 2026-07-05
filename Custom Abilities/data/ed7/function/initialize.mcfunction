@@ -1,3 +1,6 @@
+# set initialization score to 1 to prevent re-initialization
+    scoreboard players set ca.init ed7.initialize 1
+
 # INITIALIZE SCOREBOARD OBJECTIVES
     # track player health
         scoreboard objectives add ed7.player_health health
@@ -56,4 +59,4 @@
 
     give @a[team=eDRAG0N7] poisonous_potato[consumable={consume_seconds:999999,animation:"brush"},custom_data={ed7.bone:true},food={nutrition:0,saturation:0,can_always_eat:true},item_model="minecraft:bone",item_name={"bold":true,"color":"aqua","italic":false,"text":"Trusty Bone"},lore=[[{"color":"gray","italic":false,"text":"Hold "},{"bold":true,"color":"dark_aqua","italic":false,"text":"Interact "},{"color":"gray","italic":false,"text":"to toggle "},{"bold":true,"color":"gold","italic":false,"text":"Kenji"}],{"color":"black","text":"."},[{"color":"dark_gray","italic":false,"text":"When active, "},{"bold":true,"color":"gold","italic":false,"text":"Kenji "},{"color":"dark_gray","italic":false,"text":"will grant:"}],[{"color":"green","italic":false,"text":"+50% "},{"color":"gray","italic":false,"text":"mining speed"}],[{"color":"green","italic":false,"text":"+100% "},{"color":"gray","italic":false,"text":"Luck"}],{"color":"red","italic":false,"text":"∞ Hunger"}],unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}] 1
 
-reload
+say ed7 initialized

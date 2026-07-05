@@ -1,3 +1,6 @@
+# set initialization score to 1 to prevent re-initialization
+    scoreboard players set ca.init dino.initialize 1
+
 # add the Dinomyte08 team and set its color to red
     team add Dinomyte08
     team modify Dinomyte08 color red
@@ -20,5 +23,4 @@
     bossbar set dino.explode style progress
     bossbar set dino.explode players @a[team=Dinomyte08]
 
-# reload the world
-    reload
+say dino initialized

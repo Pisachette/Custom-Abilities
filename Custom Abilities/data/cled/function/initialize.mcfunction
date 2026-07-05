@@ -1,3 +1,6 @@
+# set initialization score to 1 to prevent re-initialization
+    scoreboard players set ca.init cled.initialize 1
+
 # add team Cledward
     team add Cledward
     team modify Cledward color green
@@ -23,5 +26,4 @@
     # player death check
         scoreboard objectives add cled.death_check dummy
 
-# reload world
-    reload
+say cled initialized

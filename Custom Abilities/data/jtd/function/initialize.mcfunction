@@ -1,3 +1,6 @@
+# set initialization score to 1 to prevent re-initialization
+    scoreboard players set ca.init jtd.initialize 1
+
 team add JacobTheDragon
 team modify JacobTheDragon color green
 
@@ -56,4 +59,4 @@ bossbar set minecraft:jtd.manabank players @a[team=JacobTheDragon]
 tellraw @s {"color":"green","bold":true,"text":"Initialization Complete!"}
 playsound minecraft:block.amethyst_block.resonate master @s ~ ~ ~ 1 2
 
-reload
+say jtd initialized

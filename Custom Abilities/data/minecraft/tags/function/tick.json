@@ -1,6 +1,6 @@
 {
     "values": [
-        "func:tick",
+        "main:tick",
         "jtd:main",
         "dino:main",
         "cled:main",

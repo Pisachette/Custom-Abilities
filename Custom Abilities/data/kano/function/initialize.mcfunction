@@ -1,3 +1,6 @@
+# set initialization score to 1 to prevent re-initialization
+    scoreboard players set ca.init kano.initialize 1
+
 # initialize team for unique player ability use
     team add kano5
     team modify kano5 color blue
@@ -22,4 +25,4 @@
 # give player hellfire
     execute as @a[team=kano5] run give @s poisonous_potato[consumable={consume_seconds:999999,animation:"bow"},custom_data={kano_hellfire:true},custom_name={"bold":true,"color":"red","italic":false,"shadow_color":-8388608,"text":"Hellfire"},food={nutrition:0,saturation:0,can_always_eat:true},item_model="minecraft:blaze_powder",lore=[[{"color":"dark_gray","italic":false,"text":"Hold "},{"color":"gray","text":"Interact "},{"color":"dark_gray","text":"to charge"}],[{"color":"dark_gray","italic":false,"text":"Press "},{"color":"gray","text":"Swap Hands "},"to discharge"]]]
 
-reload
+say kano initialized
