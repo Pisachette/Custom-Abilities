@@ -3,6 +3,7 @@
 
 team add JacobTheDragon
 team modify JacobTheDragon color green
+team modify JacobTheDragon seeFriendlyInvisibles false
 
 scoreboard objectives add jtd.manaBank dummy
 scoreboard objectives add jtd.manaRegen dummy
@@ -55,8 +56,5 @@ bossbar set jtd.manabank color green
 bossbar set jtd.manabank max 60
 bossbar set jtd.manabank style progress
 bossbar set minecraft:jtd.manabank players @a[team=JacobTheDragon]
-
-tellraw @s {"color":"green","bold":true,"text":"Initialization Complete!"}
-playsound minecraft:block.amethyst_block.resonate master @s ~ ~ ~ 1 2
 
 say jtd initialized

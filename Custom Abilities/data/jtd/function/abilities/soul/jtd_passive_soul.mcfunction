@@ -1,7 +1,7 @@
 # PLAYER
 
     # add score to player if the passive effect is active
-        execute as @a[team=JacobTheDragon] if items entity @s weapon.mainhand minecraft:stone_sword[minecraft:custom_data~{jtdSoul:true}] at @s if entity @e[type=!marker,team=!JacobTheDragon,tag=!jtd.soul_fx,tag=!jtd.soul_trap,distance=..5] run scoreboard players add @s jtd.soul_passive 1
+        execute as @a[team=JacobTheDragon] if items entity @s weapon.mainhand minecraft:stone_sword[minecraft:custom_data~{jtdSoul:true}] at @s if entity @e[type=!item,type=!marker,team=!JacobTheDragon,tag=!jtd.soul_fx,tag=!jtd.soul_trap,distance=..5] run scoreboard players add @s jtd.soul_passive 1
 
     # teleport the marker to the player constantly
         execute as @a[team=JacobTheDragon] at @s run tp @e[type=marker,tag=jtd.soul_fx] ~ ~ ~
