@@ -51,7 +51,7 @@
     execute as @e[type=wolf,tag=ed7.kira] run function ed7:kira/ed7_kira_bossbar
     
     # remove kira when her timer reaches 100 ticks
-        execute as @a[team=eDRAG0N7] if score @n[type=wolf,tag=ed7.kira] ed7.kira_duration matches 100.. run function ed7:kira/ed7_kira_despawn
+        execute as @a[team=eDRAG0N7] if score @n[type=wolf,tag=ed7.kira] ed7.kira_duration matches 200.. run function ed7:kira/ed7_kira_despawn
 
 
 # KENZO (vitality wolf)
