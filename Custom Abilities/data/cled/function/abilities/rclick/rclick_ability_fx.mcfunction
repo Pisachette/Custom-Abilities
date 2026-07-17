@@ -19,9 +19,9 @@
 
         # cledball track entities
             # non-zombies
-                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=20..}] at @s if entity @e[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] run tp @s ~ ~ ~ facing entity @n[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] eyes
+                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=15..}] at @s if entity @e[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] run tp @s ~ ~ ~ facing entity @n[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] eyes
             # zombies
-                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=20..}] at @s if entity @e[type=#zombies,distance=..7,team=!Cledward] run tp @s ~ ~ ~ facing entity @n[type=#zombies,distance=..7,team=!Cledward] eyes
+                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=15..}] at @s if entity @e[type=#zombies,distance=..7,team=!Cledward] run tp @s ~ ~ ~ facing entity @n[type=#zombies,distance=..7,team=!Cledward] eyes
 
     # on-hit fx
         # call cledball hit function when cledball hits a block
