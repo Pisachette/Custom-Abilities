@@ -9,6 +9,7 @@
         "minecraft:block_display",
         "minecraft:painting",
         "minecraft:arrow",
-        "minecraft:spectral_arrow"
+        "minecraft:spectral_arrow",
+        "minecraft:tnt"
     ]
 }
