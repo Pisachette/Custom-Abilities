@@ -3,3 +3,4 @@
 
 # give attack damage attribute
     attribute @s attack_damage modifier add kano.msun_melee 29 add_value
+    attribute @s minecraft:attack_knockback modifier add kano.msun_knockback 2 add_value

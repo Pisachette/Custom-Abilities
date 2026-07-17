@@ -9,6 +9,7 @@
 
 # remove attributes
     attribute @s attack_damage modifier remove kano.msun_melee
+    attribute @s attack_knockback modifier remove kano.msun_knockback
     attribute @s movement_speed modifier remove kano.movespeed
     attribute @s jump_strength modifier remove kano.jump
 

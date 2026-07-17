@@ -5,6 +5,7 @@
 
 # reset attack damage attribute
     attribute @s attack_damage modifier remove kano.msun_melee
+    attribute @s attack_knockback modifier remove kano.msun_knockback
 
 # execute beam attack looping function
     execute if score @s kano.msun_charge_meter matches 61 run scoreboard players set @s kano.msun_godray_loop 1
