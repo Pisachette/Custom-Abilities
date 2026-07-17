@@ -6,3 +6,5 @@
     data merge entity @n[type=#zombies,team=Cledward] {PersistenceRequired:1b}
 # make zombies glow
     effect give @n[type=#zombies,team=Cledward] glowing infinite 0 true
+# give zombies fire resistance
+    effect give @n[type=#zombies,team=Cledward] fire_resistance infinite 255 true

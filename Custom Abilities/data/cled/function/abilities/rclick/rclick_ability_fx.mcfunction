@@ -34,9 +34,5 @@
             execute as @e[type=item_display,tag=cled.cledball_projectile] at @s if entity @e[type=#zombies,distance=..2,team=!Cledward] run function cled:abilities/rclick/cledball/rclick_ability_cledball_convert
 
 # KILLBALL
-
     # damage entities in the poison cloud
         execute at @e[type=area_effect_cloud,tag=cled.poison_cloud] run execute as @e[distance=..5,team=!Cledward] run damage @s 2 magic by @n[team=Cledward,type=player,limit=1]
-
-    # make zombies immune to fire
-        execute as @e[type=#zombies,team=Cledward] run data merge entity @s {Fire:0s}
