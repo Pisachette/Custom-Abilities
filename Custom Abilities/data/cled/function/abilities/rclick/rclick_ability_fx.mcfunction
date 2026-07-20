@@ -19,16 +19,16 @@
 
         # cledball track entities
             # non-zombies
-                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=15..}] at @s if entity @e[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] run tp @s ~ ~ ~ facing entity @n[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies] eyes
+                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=10..}] at @s if entity @e[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies,gamemode=!spectator] run tp @s ~ ~ ~ facing entity @n[type=!#cled:cledball_passthrough_entities,distance=..5,team=!Cledward,type=!#zombies,gamemode=!spectator] eyes
             # zombies
-                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=15..}] at @s if entity @e[type=#zombies,distance=..7,team=!Cledward] run tp @s ~ ~ ~ facing entity @n[type=#zombies,distance=..7,team=!Cledward] eyes
+                execute as @e[type=item_display,tag=cled.cledball_projectile,scores={cled.cledball_lifetime=10..}] at @s if entity @e[type=#zombies,distance=..7,team=!Cledward] run tp @s ~ ~ ~ facing entity @n[type=#zombies,distance=..7,team=!Cledward] eyes
 
     # on-hit fx
         # call cledball hit function when cledball hits a block
             execute as @e[type=item_display,tag=cled.cledball_projectile] at @s unless block ~ ~ ~ #cled:cledball_passthrough_blocks run function cled:abilities/rclick/cledball/rclick_ability_cledball_hit
 
         # call cledball hit function when cledball hits a non-zombie entity
-            execute as @e[type=item_display,tag=cled.cledball_projectile] at @s if entity @e[type=!#cled:cledball_passthrough_entities,type=!#zombies,distance=..2.5,team=!Cledward] run function cled:abilities/rclick/cledball/rclick_ability_cledball_hit
+            execute as @e[type=item_display,tag=cled.cledball_projectile] at @s if entity @e[type=!#cled:cledball_passthrough_entities,type=!#zombies,distance=..2.5,team=!Cledward,gamemode=!spectator] run function cled:abilities/rclick/cledball/rclick_ability_cledball_hit
 
         # call conversion function when cledball hits zombie
             execute as @e[type=item_display,tag=cled.cledball_projectile] at @s if entity @e[type=#zombies,distance=..2,team=!Cledward] run function cled:abilities/rclick/cledball/rclick_ability_cledball_convert
