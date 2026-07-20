@@ -27,6 +27,9 @@
         "minecraft:cactus_flower",
         "minecraft:leaf_litter",
         "minecraft:wildflowers",
-        "minecraft:pink_petals"
+        "minecraft:pink_petals",
+        "minecraft:glow_lichen",
+        "minecraft:cave_vines_plant",
+        "minecraft:allium"
     ]
 }

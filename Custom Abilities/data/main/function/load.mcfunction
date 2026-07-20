@@ -18,34 +18,6 @@
     execute unless score ca.init dino.initialize matches 1 run function dino:initialize
     execute unless score ca.init kano.initialize matches 1 run function kano:initialize
 
-#kano5
-#scoreboard objectives add MSChargeTime dummy
-#scoreboard objectives add MSExecute minecraft.custom:minecraft.damage_dealt
-#scoreboard objectives add MSSoundTime dummy
-#scoreboard objectives add MSChargeUp dummy
-#scoreboard objectives add MSReset health
-
-#scoreboard objectives add book.use dummy
-#scoreboard objectives add book.charge dummy
-#scoreboard objectives add book.marker_timer dummy
-
-#team add kano5
-#team modify kano5 color blue
-#clear @a[team=kano5] glowstone_dust[consumable={consume_seconds:99999,animation:"trident",has_consume_particles:false},food={nutrition:0,saturation:0,can_always_eat:true},lore=[[{"color":"gray","text":"Hold "},{"color":"gold","text":"Interact "},{"color":"gray","text":"to use"}]],max_stack_size=1,custom_name={"bold":true,"color":"yellow","text":"SUN PUNCH"}]
-#give @a[team=kano5] glowstone_dust[consumable={consume_seconds:99999,animation:"trident",has_consume_particles:false},food={nutrition:0,saturation:0,can_always_eat:true},lore=[[{"color":"gray","text":"Hold "},{"color":"gold","text":"Interact "},{"color":"gray","text":"to use"}]],max_stack_size=1,custom_name={"bold":true,"color":"yellow","text":"SUN PUNCH"}] 1
-#clear @a[team=kano5] enchanted_book[consumable={consume_seconds:99999,animation:"bow"},custom_data={blast:true},food={nutrition:0,saturation:0,can_always_eat:true},item_name={"bold":true,"color":"yellow","text":"Book of Blasting"},lore=[[{"color":"gray","italic":false,"text":"Hold "},{"color":"gold","italic":false,"text":"Interact "},{"color":"gray","italic":false,"text":"to use"}]],max_stack_size=1]
-#give @a[team=kano5] enchanted_book[consumable={consume_seconds:99999,animation:"bow"},custom_data={blast:true},food={nutrition:0,saturation:0,can_always_eat:true},item_name={"bold":true,"color":"yellow","text":"Book of Blasting"},lore=[[{"color":"gray","italic":false,"text":"Hold "},{"color":"gold","italic":false,"text":"Interact "},{"color":"gray","italic":false,"text":"to use"}]],max_stack_size=1]
-#advancement revoke @a only func:use
-
-
-#HyperCat
-scoreboard objectives add jumpCharge minecraft.custom:minecraft.sneak_time
-scoreboard objectives add jumpTimer dummy
-scoreboard objectives add jumpGlow dummy
-scoreboard objectives add jumpActivate minecraft.custom:minecraft.jump
-team add HyperCat
-team modify HyperCat color yellow
-
 
 #NicTheDragon
 scoreboard objectives add fireInitiate minecraft.custom:minecraft.sneak_time
@@ -70,12 +42,3 @@ bossbar add fb {"bold":true,"color":"red","text":"Fire Breath"}
 bossbar set minecraft:fb max 10
 bossbar set minecraft:fb color red
 bossbar set minecraft:fb style notched_10
-
-
-
-#Shark
-scoreboard objectives add sharkReset health
-scoreboard objectives add sharkTimer dummy
-scoreboard objectives add sharkCrouch minecraft.custom:minecraft.sneak_time
-team add shark
-team modify shark color dark_purple
