@@ -11,13 +11,15 @@
     scoreboard objectives add dino.explosionTimer dummy
     scoreboard objectives add dino.actionbar_loop dummy
     scoreboard objectives add dino.exploded dummy
+    scoreboard objectives add dino.boomstick_throw dummy
+    scoreboard objectives add dino.boomstick_lifetime dummy
 
 # create scoreboard objectives for the explode-on-death ability
     scoreboard objectives add dino.health health
     scoreboard objectives add dino.deathCheck dummy
 
 # create bossbar
-    bossbar add dino.explode {"bold":true,"color":"red","text":"SELF DESTRUCT"}
+    bossbar add dino.explode {"bold":true,"color":"red","text":"CHARGE"}
     bossbar set dino.explode color red
     bossbar set dino.explode max 60
     bossbar set dino.explode style progress

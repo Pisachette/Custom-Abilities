@@ -6,13 +6,13 @@
           "item": {
             "items": "minecraft:poisonous_potato",
             "predicates": {
-              "minecraft:custom_data": "{kano_hellfire:true}"
+              "minecraft:custom_data": "{dino.boomstick:true}"
             }
           }
         }
       }
     },
     "rewards": {
-      "function": "kano:playerstate_detection/hellfire_rclick"
+      "function": "dino:rclick_boomstick"
     }
   }
