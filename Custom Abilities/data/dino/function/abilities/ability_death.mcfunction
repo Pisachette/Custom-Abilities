@@ -18,6 +18,8 @@
         scoreboard players reset @s dino.exploded
     # reset explosion charge
         scoreboard players reset @s dino.explosionTimer
+    # reset boomstick throw cooldown
+        scoreboard players reset @s dino.boomstick_throw
 
 
 # set death check to 1 to prevent looping

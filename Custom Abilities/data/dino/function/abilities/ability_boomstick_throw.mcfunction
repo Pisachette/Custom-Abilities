@@ -1,7 +1,7 @@
 # boomstick fx
     # sounds
         # throw
-            execute if score @s dino.boomstick_throw matches 1 at @s run playsound minecraft:entity.witch.throw master @a ~ ~ ~ 1 .5
+            execute unless score @s dino.health matches 0 if score @s dino.boomstick_throw matches 1 at @s run playsound minecraft:entity.witch.throw master @a ~ ~ ~ 1 .5
         # boomstick in-air
             execute at @e[type=marker,tag=dino.boomstick_marker] run playsound minecraft:entity.breeze.charge master @a ~ ~ ~ 1 2
     # particles
@@ -9,9 +9,9 @@
         
 # summon the boomstick projectile and marker when right-clicking boomstick
     # trajectory marker
-        execute if score @s dino.boomstick_throw matches 1 at @s run summon marker ~ ~ ~ {Tags:["dino.boomstick_marker","dino.boomstick"],CustomName:{"bold":true,"color":"red","text":"Boomstick"}}
+        execute unless score @s dino.health matches 0 if score @s dino.boomstick_throw matches 1 at @s run summon marker ~ ~ ~ {Tags:["dino.boomstick_marker","dino.boomstick"],CustomName:{"bold":true,"color":"red","text":"Boomstick"}}
     # item display
-        execute if score @s dino.boomstick_throw matches 1 at @s run summon item_display ~ ~1.625 ~ {billboard:"fixed",Tags:["dino.boomstick_projectile","dino.boomstick"],CustomName:{"bold":true,"color":"red","text":"Boomstick"},item:{id:"minecraft:blaze_rod",count:1}}
+        execute unless score @s dino.health matches 0 if score @s dino.boomstick_throw matches 1 at @s run summon item_display ~ ~1.625 ~ {billboard:"fixed",Tags:["dino.boomstick_projectile","dino.boomstick"],CustomName:{"bold":true,"color":"red","text":"Boomstick"},item:{id:"minecraft:blaze_rod",count:1}}
 
 # increment the boomstick markers lifetime
     scoreboard players add @e[tag=dino.boomstick] dino.boomstick_lifetime 1
@@ -35,10 +35,10 @@
         execute as @e[type=marker,tag=dino.boomstick_marker] at @s if entity @e[type=!#dino:boomstick_passthrough_entities,distance=..2.5,team=!Dinomyte08] run function dino:abilities/ability_boomstick_hit
 
 # remove boomstick item upon use
-    execute if score @s dino.boomstick_throw matches 1 run clear @s poisonous_potato[custom_data={dino.boomstick:true}] 1
+    execute unless score @s dino.health matches 0 if score @s dino.boomstick_throw matches 1 run clear @s poisonous_potato[custom_data={dino.boomstick:true}] 1
 
 # boomstick cooldown
-    execute if score @s dino.boomstick_throw matches 1.. run scoreboard players add @s dino.boomstick_throw 1
+    execute unless score @s dino.health matches 0 if score @s dino.boomstick_throw matches 1.. run scoreboard players add @s dino.boomstick_throw 1
 
 # reset throw score
     execute if score @s dino.boomstick_throw matches 10.. run scoreboard players reset @s dino.boomstick_throw

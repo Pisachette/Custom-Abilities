@@ -1,2 +1,2 @@
-execute unless score @s dino.boomstick_throw matches 2.. run scoreboard players set @s dino.boomstick_throw 1
+execute unless score @s dino.health matches 0 unless score @s dino.boomstick_throw matches 2.. run scoreboard players set @s dino.boomstick_throw 1
 advancement revoke @s only dino:dino_advancement_boomstick
