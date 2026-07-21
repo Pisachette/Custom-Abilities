@@ -18,6 +18,18 @@
         "minecraft:weeping_vines",
         "minecraft:nether_sprouts",
         "minecraft:cave_vines",
-        "minecraft:sunflower"
+        "minecraft:sunflower",
+        "minecraft:rose_bush",
+        "minecraft:lilac",
+        "minecraft:allium",
+        "minecraft:azure_bluet",
+        "minecraft:poppy",
+        "minecraft:cactus_flower",
+        "minecraft:leaf_litter",
+        "minecraft:wildflowers",
+        "minecraft:pink_petals",
+        "minecraft:glow_lichen",
+        "minecraft:cave_vines_plant",
+        "minecraft:allium"
     ]
 }

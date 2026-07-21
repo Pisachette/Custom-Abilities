@@ -1,6 +1,12 @@
-execute as @a[team=JacobTheDragon] if score @s jtd.air_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
-execute as @a[team=JacobTheDragon] if score @s jtd.earth_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
-execute as @a[team=JacobTheDragon] if score @s jtd.ender_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
-execute as @a[team=JacobTheDragon] if score @s jtd.fire_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
-execute as @a[team=JacobTheDragon] if score @s jtd.soul_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
-execute as @a[team=JacobTheDragon] if score @s jtd.water_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+# add spamProtection score to player to prevent ability looping while holding right click with an item
+    execute as @a[team=JacobTheDragon] if score @s jtd.air_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+
+    execute as @a[team=JacobTheDragon] if score @s jtd.earth_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+
+    execute as @a[team=JacobTheDragon] if score @s jtd.ender_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+    
+    execute as @a[team=JacobTheDragon] if score @s jtd.fire_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+
+    execute as @a[team=JacobTheDragon] if score @s jtd.soul_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1
+    
+    execute as @a[team=JacobTheDragon] if score @s jtd.water_rClick matches 1 unless score @s jtd.item_spamProtection matches 2 run scoreboard players add @s jtd.item_spamProtection 1

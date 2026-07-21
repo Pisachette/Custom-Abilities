@@ -4,7 +4,7 @@
         "trigger": "minecraft:using_item",
         "conditions": {
           "item": {
-            "items": "minecraft:stone_sword",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": "{jtdFire:true}"
             }
