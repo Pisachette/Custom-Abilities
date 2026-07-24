@@ -3,8 +3,8 @@
     "requirement": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": {
-          "type": "interaction"
+        "type": {
+          "entity_type": "interaction"
         }
       }
     }
