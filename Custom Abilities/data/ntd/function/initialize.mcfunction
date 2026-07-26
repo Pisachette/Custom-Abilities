@@ -12,6 +12,8 @@
         scoreboard objectives add ntd.fly minecraft.custom:minecraft.aviate_one_cm
     # detect player sneaking
         scoreboard objectives add ntd.sneak minecraft.custom:minecraft.sneak_time
+    # detect player jumping
+        scoreboard objectives add ntd.jump minecraft.custom:minecraft.jump
     # track player health
         scoreboard objectives add ntd.health health
     # death check to prevent function looping
@@ -30,6 +32,8 @@
         scoreboard objectives add ntd.dragonbreath_bossbar_active dummy
     # player rclick detection
         scoreboard objectives add ntd.rclick_dragonheart dummy
+    # takeoff ability charge
+        scoreboard objectives add ntd.takeoff_charge dummy
 
 
 # initialize team
