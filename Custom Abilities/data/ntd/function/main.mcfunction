@@ -40,6 +40,9 @@
             execute as @a[team=NicTheDragon] if items entity @s container.* dragon_head[custom_data={ntd.dragonhead:true}] run clear @s dragon_head[custom_data={ntd.dragonhead:true}]
         
     # TAKEOFF
+        # takeoff cancel fx
+            execute as @a[team=NicTheDragon] if score @s ntd.takeoff_charge matches 100.. unless items entity @s weapon.mainhand poisonous_potato[custom_data={ntd.dragonheart:true}] run effect clear @s jump_boost
+            execute as @a[team=NicTheDragon] if score @s ntd.takeoff_charge matches 1.. unless items entity @s weapon.mainhand poisonous_potato[custom_data={ntd.dragonheart:true}] run title @s actionbar ""
         # remove charge if player takes hand off dragonheart
             execute as @a[team=NicTheDragon] unless items entity @s weapon.mainhand poisonous_potato[custom_data={ntd.dragonheart:true}] run scoreboard players reset @s ntd.takeoff_charge
         # charge up takeoff
@@ -48,7 +51,7 @@
             execute as @a[team=NicTheDragon] if score @s ntd.takeoff_charge matches 100.. run effect give @s jump_boost 1 25 true
             execute as @a[team=NicTheDragon] if score @s ntd.takeoff_charge matches 100.. if score @s ntd.jump matches 1.. at @s run function ntd:abilities/ntd_ability_takeoff
         # takeoff FX
-            execute as @a[team=NicTheDragon] unless score @s ntd.health matches 0 at @s run function ntd:abilities/ntd_ability_takeoff_fx
+            execute as @a[team=NicTheDragon] unless score @s ntd.health matches 0 if items entity @s weapon.mainhand poisonous_potato[custom_data={ntd.dragonheart:true}] at @s run function ntd:abilities/ntd_ability_takeoff_fx
         
 
 # SCORE RESET
