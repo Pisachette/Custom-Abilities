@@ -13,7 +13,7 @@
 
 # actionbar
     execute unless score @s ntd.sneak matches 1.. run title @s actionbar ""
-    execute unless score @s ntd.fly matches 1.. if score @s ntd.sneak matches 1.. unless score @s ntd.takeoff_charge matches 10.. run title @s actionbar [{"color":"white","text":"["},{"color":"gray","text":"||||||||||"},{"color":"white","text":"]"}]
+    execute unless score @s ntd.dragonhead_active matches 1.. if score @s ntd.sneak matches 1.. unless score @s ntd.takeoff_charge matches 10.. run title @s actionbar [{"color":"white","text":"["},{"color":"gray","text":"||||||||||"},{"color":"white","text":"]"}]
     execute if score @s ntd.takeoff_charge matches 10 run title @s actionbar [{"color":"white","text":"["},{"color":"dark_purple","text":"|"},{"color":"gray","text":"|||||||||"},{"color":"white","text":"]"}]
     execute if score @s ntd.takeoff_charge matches 20 run title @s actionbar [{"color":"white","text":"["},{"color":"dark_purple","text":"||"},{"color":"gray","text":"||||||||"},{"color":"white","text":"]"}]
     execute if score @s ntd.takeoff_charge matches 30 run title @s actionbar [{"color":"white","text":"["},{"color":"dark_purple","text":"|||"},{"color":"gray","text":"|||||||"},{"color":"white","text":"]"}]
