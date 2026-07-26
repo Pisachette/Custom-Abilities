@@ -1,5 +1,8 @@
-# application sound
-    playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 2
+# FX
+    # application sound
+        playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 2
+    # application particles
+        particle minecraft:witch ~ ~1 ~ .2 .5 .2 1 20
 
 # apply bool score
     scoreboard players add @s ntd.dragonhead_active 1
