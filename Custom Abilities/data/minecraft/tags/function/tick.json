@@ -1,10 +1,10 @@
 {
     "values": [
-        "main:tick",
         "jtd:main",
         "dino:main",
         "cled:main",
         "kano:main",
-        "ed7:main"
+        "ed7:main",
+        "ntd:main"
     ]
 }

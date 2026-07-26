@@ -4,15 +4,15 @@
         "trigger": "minecraft:using_item",
         "conditions": {
           "item": {
-            "items": "minecraft:wooden_sword",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
-              "minecraft:custom_data": "{ft:true}"
+              "minecraft:custom_data": "{ntd.dragonheart:true}"
             }
           }
         }
       }
     },
     "rewards": {
-      "function": "func:ft_use"
+      "function": "ntd:rclick_dragonheart"
     }
   }
